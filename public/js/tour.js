@@ -64,7 +64,37 @@ cards.forEach(card => {
 
 // ------------------------------------------------------------------------------------------
 
-// Like Count Kan
+// // Like Count Kan
+// function updateClickCount(placeId) {
+//   fetch('/updateClickCount', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify({ placeId })
+//   })
+//   .then(response => {
+//     if (response.ok) {
+//       console.log('Click count updated successfully!');
+//       return response.json();
+//     } else {
+//       throw new Error('Failed to update click count');
+//     }
+//   })
+//   .then(data => {
+//     // นำข้อมูล clickCount ที่ได้รับมาแสดงในหน้าเว็บ
+//     console.log('Click count:', data.clickCount); // เพิ่มเป็นการแสดงผลทาง console สำหรับตรวจสอบเท่านั้น สามารถเปลี่ยนเป็นการแสดงผลที่หน้าเว็บได้ตามต้องการ
+
+//     alert('👍🏻' + data.clickCount);
+//   })
+//   .catch(error => {
+//     console.error('Error updating click count:', error);
+//   });
+
+// }
+
+
+// Like Count
 function updateClickCount(placeId) {
   fetch('/updateClickCount', {
     method: 'POST',
@@ -82,16 +112,19 @@ function updateClickCount(placeId) {
     }
   })
   .then(data => {
-    // นำข้อมูล clickCount ที่ได้รับมาแสดงในหน้าเว็บ
-    console.log('Click count:', data.clickCount); // เพิ่มเป็นการแสดงผลทาง console สำหรับตรวจสอบเท่านั้น สามารถเปลี่ยนเป็นการแสดงผลที่หน้าเว็บได้ตามต้องการ
-
-    alert('👍🏻' + data.clickCount);
+    const showLikeElement = document.querySelector(`#showLike${placeId}`);
+    if (showLikeElement) {
+      showLikeElement.innerHTML = `👍🏻 ${data.clickCount}`;
+    } else {
+      console.error(`Element with id "showLike${placeId}" not found`);
+    }
   })
   .catch(error => {
     console.error('Error updating click count:', error);
   });
 
 }
+
 
 // เพิ่ม event listener บน element หลักที่ครอบทุกปุ่ม
 document.addEventListener('click', function(event) {
@@ -226,19 +259,19 @@ function submitForm(formId, collectionName) {
   const currentURL = window.location.pathname;
 
   // กำหนด formId และ collectionName ตาม URL
-  if (currentURL === '/Travel_Tak') {
+  if (currentURL === '/travel_Tak') {
     formId = 'addFormTak';
     collectionName = 'FeedbackTak';
-  } else if (currentURL === '/Travel_Kan') {
+  } else if (currentURL === '/travel_Kan') {
     formId = 'addFormKan';
     collectionName = 'FeedbackKan';
-  } else if (currentURL === '/Travel_Rat') {
+  } else if (currentURL === '/travel_Rat') {
     formId = 'addFormRat';
     collectionName = 'FeedbackRat';
-  } else if (currentURL === '/Travel_Prac') {
+  } else if (currentURL === '/travel_Prac') {
     formId = 'addFormPrac';
     collectionName = 'FeedbackPrac';
-  } else if (currentURL === '/Travel_Phet') {
+  } else if (currentURL === '/travel_Phet') {
     formId = 'addFormPhet';
     collectionName = 'FeedbackPhet';
   }

@@ -3,7 +3,6 @@ body {
     /* background-color: aliceblue; */
 }
 
-
 /* Title History */
 .wrapper, .wrapper_sm{
     display:flex;
@@ -22,7 +21,7 @@ body {
 .wrapper h1, .wrapper_sm h1{
     font-weight: 900;
     background:url(https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/weather/cloud/altocumulus.jpg) no-repeat;
-    -webkit-background-clip:text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;  
 }
 

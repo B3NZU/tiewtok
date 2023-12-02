@@ -63,85 +63,87 @@
 <body>
 
   <!-- navbar -->
-     <div class="p-3 text-white" style="background-color: #0f0c3a;">
-        <div class="flexMain">
-          <div class="flex2 text-center">
-            <div><strong>Website introducing tourist attractions in the western region of Thailand.</strong></div>
-          </div>
-        </div>
+  <div class="p-3 text-white" style="background-color: #0f0c3a;">
+    <div class="flexMain">
+      <div class="flex2 text-center">
+        <div><strong>Website introducing tourist attractions in the western region of Thailand.</strong></div>
       </div>
+    </div>
+  </div>
 
-      <div class="flexMain sticky-top" style="background-color: rgb(255, 255, 255); border-bottom: #0f0c3a; border-bottom-style: solid; border-bottom-width: 0.8px;">
-        <div class="flex2">
-          <button class="btn siteLink" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" 
-          aria-controls="offcanvasExample" >
-            <i class="fas fa-bars me-2"></i>MENU
-          </button>
-        </div>
-        <div class="flex3 text-center" id="siteBrand">
-          <a href="/home" style="text-decoration: none; color: #0f0c3a;">
-              <h2>TIEWTOK</h2></a>
-        </div>
-        <div class="flex2 text-end d-none d-md-block">
-          <button class="whiteLink siteLink">REGISTER</button>
-          <button class="blackLink siteLink">Login</button>
-          </div>
+  <div class="flexMain sticky-top" style="background-color: rgb(255, 255, 255); border-bottom: #0f0c3a; border-bottom-style: solid; border-bottom-width: 0.8px;">
+    <div class="flex2">
+      <button class="btn siteLink" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" 
+      aria-controls="offcanvasExample" >
+        <i class="fas fa-bars me-2" style="color: #0f0c3a;"></i>MENU
+      </button>
+    </div>
+    <div class="flex3 text-center" id="siteBrand">
+      <a href="/home" style="text-decoration: none; color: #0f0c3a;">
+          <h2>TIEWTOK</h2></a>
+    </div>
+    <div class="flex2 text-end d-md-block ">
+      <a href="/login"><button class="whiteLink siteLink">PROFILE</button></a>
+        <a href="/logout"><button class="blackLink siteLink">LOG OUT</button></a>
       </div>
-      
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header" style="margin-top: 20px; margin-left: 20px; margin-right: 30px;">
-          <a href="/home" class="offcanvas-title" id="offcanvasExampleLabel"><img src="img/logo.png" class="offcanvas-title" id="offcanvasExampleLabel" width="80px" height="80px" style="border-radius: 60px;"></a>
-          <button type="button" class="btn-close text-reset" style="font-size:large" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <a href="/home" class="nav-menu-item" style="font-weight:bold;"><i class="me-3"></i>Home</a>
+  </div>
   
-              <a class="btn nav-menu-item text-start" style="padding-left: 47px; font-weight:bold;" data-bs-toggle="collapse" 
-              href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">History <i class="fa-solid fa-caret-down"></i></a>
-    
-             <div class="collapse multi-collapse" id="multiCollapseExample1">
-                <a class="card-body nav-menu-item" style="padding-left: 60px;" href="/History_Kan">
-                  ●  Kanchanaburi
-                </a>
-                <a class="card-body nav-menu-item" style="padding-left: 60px;" href="/History_Tak">
-                  ●  Tak
-                </a>
-                <a class="card-body nav-menu-item" style="padding-left: 60px;" href="/History_Prac">
-                  ●  Prachuap Khiri Khan
-                </a>
-                <a class="card-body nav-menu-item" style="padding-left: 60px;" href="/History_Phet">
-                  ●  Phetchaburi
-                </a>
-                <a class="card-body nav-menu-item" style="padding-left: 60px;" href="/History_Rat">
-                  ●  Ratchaburi
-                </a>
-             </div>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header" style="margin-top: 20px; margin-left: 20px; margin-right: 30px;">
+      <a class="offcanvas-title" id="offcanvasExampleLabel"><img src="/img/first/logo.png" class="offcanvas-title" id="offcanvasExampleLabel" width="80px" height="80px" style="border-radius: 60px;"></a>
+      <button type="button" class="btn-close text-reset" style="font-size:large" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <a href="/home" class="btn nav-menu-item text-start" style="font-weight:bold;"><i class="me-3"></i>Home</a>
 
-              <a class="btn nav-menu-item text-start" style="padding-left: 47px; font-weight:bold;" data-bs-toggle="collapse" 
-             href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Tourist Attractions <i class="fa-solid fa-caret-down"></i></a>
-  
-              <div class="collapse multi-collapse" id="multiCollapseExample2">
-                <a class="card-body nav-menu-item" style="padding-left: 60px;" href="#">
-                  ●  Kanchanaburi
-                </a>
-                <a class="card-body nav-menu-item" style="padding-left: 60px;" href="/Travel_Tak">
-                  ●  Tak
-                </a>
-                <a class="card-body nav-menu-item" style="padding-left: 60px;" href="/Travel_Prac">
-                  ●  Prachuap Khiri Khan
-                </a>
-                <a class="card-body nav-menu-item" style="padding-left: 60px;" href="/Travel_Phet">
-                  ●  Phetchaburi
-                </a>
-                <a class="card-body nav-menu-item" style="padding-left: 60px;" href="/Travel_Rat">
-                  ●  Ratchaburi
-                </a>
-              </div>
 
-                <a href="product.html" class="nav-menu-item" style="font-weight:bold;"><i class="me-3"></i>Products</a>
-                <a href="#" class="nav-menu-item" style="font-weight:bold;"><i class="me-3"></i>Contact Us</a>
-        </div>
-      </div>
+            <a class="btn nav-menu-item text-start" style="padding-left: 47px; font-weight:bold;" data-bs-toggle="collapse" 
+          href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">History <i class="fa-solid fa-caret-down"></i></a>
+
+         <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <a class="card-body nav-menu-item" style="padding-left: 60px;" href="/History_Kan">
+              ●  Kanchanaburi
+            </a>
+            <a class="card-body nav-menu-item" style="padding-left: 60px;" href="History_Tak">
+              ●  Tak
+            </a>
+            <a class="card-body nav-menu-item" style="padding-left: 60px;" href="History_Prac">
+              ●  Prachuap Khiri Khan
+            </a>
+            <a class="card-body nav-menu-item" style="padding-left: 60px;" href="History_Phet">
+              ●  Phetchaburi
+            </a>
+            <a class="card-body nav-menu-item" style="padding-left: 60px;" href="History_Rat">
+              ●  Ratchaburi
+            </a>
+         </div>
+
+          <a class="btn nav-menu-item text-start" style="padding-left: 47px; font-weight:bold;" data-bs-toggle="collapse" 
+         href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Tourist Attractions <i class="fa-solid fa-caret-down"></i></a>
+
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <a class="card-body nav-menu-item" style="padding-left: 60px;" href="travel_Kan">
+              ●  Kanchanaburi
+            </a>
+            <a class="card-body nav-menu-item" style="padding-left: 60px;" href="travel_Tak">
+              ●  Tak
+            </a>
+            <a class="card-body nav-menu-item" style="padding-left: 60px;" href="travel_Prac">
+              ●  Prachuap Khiri Khan
+            </a>
+            <a class="card-body nav-menu-item" style="padding-left: 60px;" href="travel_Phet">
+              ●  Phetchaburi
+            </a>
+            <a class="card-body nav-menu-item" style="padding-left: 60px;" href="travel_Rat">
+              ●  Ratchaburi
+            </a>
+          </div>
+
+            <a href="/product" class="btn nav-menu-item text-start" style="font-weight:bold;"><i class="me-3"></i>Products</a>
+            <a href="/contact" class="btn nav-menu-item text-start" style="font-weight:bold;"><i class="me-3"></i>Contact Us</a>
+    </div>
+  </div>
+  <!-- navbar -->
 
     <img src="/img_travel/cover/2.png" class="img-fluid" alt="">
     <div style="height: 100px;"></div>
@@ -281,6 +283,7 @@
         <!-- Name -->
         <div class="text-center h3 name01" style="color: #0f0c3a;"><b><%= dataT1.name %></b>&nbsp;
           <button id="like-button1">👍🏻</button>
+          <div id="showLike1">👍🏻</div>
         </div>
         <hr class="w-50" style="margin: auto;">
         <div style="height: 50px;"></div>
@@ -521,7 +524,8 @@
 
         <!-- Name -->
         <div class="text-center h3" style="color: #0f0c3a;"><b><%= dataT2.name %></b> &nbsp;
-          <button id="like-button2" class="text-decoration-none text-black">👍🏻</button>
+          <button id="like-button2">👍🏻</button>
+          <div id="showLike2">👍🏻</div>
         </div>
         <hr class="w-50" style="margin: auto;">
         <div style="height: 50px;"></div>
@@ -771,7 +775,8 @@
 
         <!-- Name -->
         <div class="text-center h3" style="color: #0f0c3a;"><b><%= dataT3.name %></b> &nbsp;
-          <button id="like-button3" class="text-decoration-none text-black">👍🏻</button>
+          <button id="like-button3">👍🏻</button>
+          <div id="showLike3">👍🏻</div>
         </div>
         <hr class="w-50" style="margin: auto;">
         <div style="height: 50px;"></div>
@@ -1012,7 +1017,8 @@
 
         <!-- Name -->
         <div class="text-center h3" style="color: #0f0c3a;"><b><%= dataT4.name %></b> &nbsp;
-          <button id="like-button4" class="text-decoration-none text-black">👍🏻</button>
+          <button id="like-button4">👍🏻</button>
+          <div id="showLike4">👍🏻</div>
         </div>
         <hr class="w-50" style="margin: auto;">
         <div style="height: 50px;"></div>
@@ -1262,7 +1268,8 @@
 
         <!-- Name -->
         <div class="text-center h3" style="color: #0f0c3a;"><b><%= dataT5.name %></b> &nbsp;
-          <button id="like-button5" class="text-decoration-none text-black">👍🏻</button>
+          <button id="like-button5">👍🏻</button>
+          <div id="showLike5">👍🏻</div>
         </div>
         <hr class="w-50" style="margin: auto;">
         <div style="height: 50px;"></div>
@@ -1503,7 +1510,8 @@
 
         <!-- Name -->
         <div class="text-center h3" style="color: #0f0c3a;"><b><%= dataT6.name %></b> &nbsp;
-          <button id="like-button6" class="text-decoration-none text-black">👍🏻</button>
+          <button id="like-button6">👍🏻</button>
+          <div id="showLike6">👍🏻</div>
         </div>
         <hr class="w-50" style="margin: auto;">
         <div style="height: 50px;"></div>
@@ -1753,7 +1761,8 @@
 
         <!-- Name -->
         <div class="text-center h3" style="color: #0f0c3a;"><b><%= dataT7.name %></b> &nbsp;
-          <button id="like-button7" class="text-decoration-none text-black">👍🏻</button>
+          <button id="like-button7">👍🏻</button>
+          <div id="showLike7">👍🏻</div>
         </div>
         <hr class="w-50" style="margin: auto;">
         <div style="height: 50px;"></div>
@@ -1994,7 +2003,8 @@
 
         <!-- Name -->
         <div class="text-center h3" style="color: #0f0c3a;"><b><%= dataT8.name %></b> &nbsp;
-          <button id="like-button8" class="text-decoration-none text-black">👍🏻</button>
+          <button id="like-button8">👍🏻</button>
+          <div id="showLike8">👍🏻</div>
         </div>
         <hr class="w-50" style="margin: auto;">
         <div style="height: 50px;"></div>
@@ -2244,7 +2254,8 @@
 
         <!-- Name -->
         <div class="text-center h3" style="color: #0f0c3a;"><b><%= dataT9.name %></b> &nbsp;
-          <button id="like-button9" class="text-decoration-none text-black">👍🏻</button>
+          <button id="like-button9">👍🏻</button>
+          <div id="showLike9">👍🏻</div>
         </div>
         <hr class="w-50" style="margin: auto;">
         <div style="height: 50px;"></div>
@@ -2486,6 +2497,7 @@
         <!-- Name -->
         <div class="text-center h3" style="color: #0f0c3a;"><b><%= dataT10.name %></b> &nbsp;
           <button id="like-button10">👍🏻</button>
+          <div id="showLike10">👍🏻</div>
         </div>
         <hr class="w-50" style="margin: auto;">
         <div style="height: 50px;"></div>
@@ -2781,46 +2793,88 @@
     <i class="fas fa-arrow-up"></i>
   </button>
 
+  <h6 style="text-align: center; color: rgb(155, 154, 154); margin-top: 60px;">&copy; Western Thailand</h6>
+
   <!-- Footer -->
-  <footer class="text-center text-white" style="background-color: #0f0c3a">
+  <footer class="text-center text-white" style="background-color: #0f0c3a;">
     <div class="container">
       <section class="mt-5">
+        <div class="row d-flex pt-3">
+                    <div class="col-md-2">
+                      <hr class="hr-1">
+                      <h5 class="text-uppercase font-weight-bold text-center">
+                        <a href="/home" class="text-white" style="text-decoration: none;">Home</a>
+                      </h5>
+                      <hr class="hr-1">
+                    </div>
 
-        <div class="row text-center d-flex justify-content-center pt-5">
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#scrollspyHeading1" class="text-white" style="text-decoration: none;">Home</a>
-            </h6>
-          </div>
+                    <div class="col-md-3">
+                      <hr class="hr-1">
+                      <h5 class="text-uppercase font-weight-bold text-center">
+                        <a href="#" class="text-white" style="text-decoration: none;">History</a>
+                      </h5>
+                      <hr class="hr-1">
+                      <h6 class="text-uppercase text-center">
+                        <a href="History_Kan" class="text-white" style="text-decoration: none;">Kanchanaburi</a>
+                        <br>
+                        <br>
+                            <a href="History_Tak" class="text-white" style="text-decoration: none;">Tak</a>
+                        <br>
+                        <br>
+                            <a href="History_Prac" class="text-white" style="text-decoration: none;">Prachuap Khiri Khan</a>
+                        <br>
+                        <br>
+                            <a href="History_Phet" class="text-white" style="text-decoration: none;">Phetchaburi</a>
+                        <br>
+                        <br>
+                            <a href="History_Rat" class="text-white" style="text-decoration: none;">Ratchaburi</a>
+                          </h6>
+                    </div>
 
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#scrollspyHeading2" class="text-white" style="text-decoration: none;">History</a>
-            </h6>
-          </div>
+                  <div class="col-md-3">
+                    <hr class="hr-1">
+                    <h5 class="text-uppercase font-weight-bold text-center">
+                      <a href="#" class="text-white" style="text-decoration: none;">Tourist Attractions</a>
+                    </h5>
+                    <hr class="hr-1">
+                    <h6 class="text-uppercase text-center">
+                      <a href="Travel_Kan" class="text-white" style="text-decoration: none;">Kanchanaburi</a>
+                      <br>
+                      <br>
+                          <a href="Travel_Tak" class="text-white" style="text-decoration: none;">Tak</a>
+                      <br>
+                      <br>
+                          <a href="Travel_Prac" class="text-white" style="text-decoration: none;">Prachuap Khiri Khan</a>
+                      <br>
+                      <br>
+                          <a href="Travel_Phet" class="text-white" style="text-decoration: none;">Phetchaburi</a>
+                      <br>
+                      <br>
+                          <a href="Travel_Rat" class="text-white" style="text-decoration: none;">Ratchaburi</a>
+                        </h6>
+                  </div>
 
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#scrollspyHeading3" class="text-white" style="text-decoration: none;">Tourist Attractions</a>
-            </h6>
-          </div>
+                  <div class="col-md-2">
+                    <hr class="hr-1">
+                    <h5 class="text-uppercase font-weight-bold text-center">
+                      <a href="/product" class="text-white" style="text-decoration: none;">Products</a>
+                    </h5>
+                    <hr class="hr-1">
+                  </div>
 
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#scrollspyHeading4" class="text-white" style="text-decoration: none;">Products</a>
-            </h6>
-          </div>
+                  <div class="col-md-2">
+                    <hr class="hr-1">
+                    <h5 class="text-uppercase font-weight-bold text-center">
+                      <a href="/contact" class="text-white" style="text-decoration: none;">Contact Us</a>
+                    </h5>
+                    <hr class="hr-1">
+                  </div>
 
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#scrollspyHeading5" class="text-white" style="text-decoration: none;">Contact Us</a>
-            </h6>
-          </div>
         </div>
       </section>
 
-      <hr class="my-5" />
-      <section class="mb-5">
+      <hr class="my-5">
+      <section class="mb-3">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-8">
             <p>
@@ -2829,19 +2883,18 @@
           </div>
         </div>
       </section>
-
     </div>
 
     <div
          class="text-center p-3"
          style="background-color: rgba(0, 0, 0, 0.2)"
          >
-      © 2020 Copyright:
-      <a class="text-white" href="home.html"
-         >BRAND.com</a
-        >
+      © 2023 Copyright:
+      <a class="text-white" href="/home"
+         >tiewtok.com</a>
     </div>
   </footer>
+  <!-- Footer -->
 
   <script src="/js/tour.js" type="module"></script>
 
